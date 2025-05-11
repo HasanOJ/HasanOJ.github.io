@@ -1,6 +1,7 @@
 ---
-title: Generative Models
+title: Generative Models (unedited)
 date: 2025-05-11
+draft: true
 tags: [notes, unedited, generative models]
 ---
 

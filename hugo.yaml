@@ -70,6 +70,10 @@ params:
   #     - name: Tags
   #       url: tags
 
+  module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
+
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
