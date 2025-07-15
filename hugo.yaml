@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://json.schemastore.org/hugo.json
+# yaml-language-server: $schema=
 
 baseURL: https://hasanoj.github.io/
 languageCode: en-us
@@ -168,22 +168,13 @@ pygmentsUseClasses: true
 
 markup:
   goldmark:
-    renderer:
-      unsafe: true  # Allows raw HTML/JS (needed for MathJax scripts)
     extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-  highlight:
-    codeFences: true
-    guessSyntax: false
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: false
-    style: monokai
-    tabWidth: 4
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["$", "$"]
+            - ["\\(", "\\)"]

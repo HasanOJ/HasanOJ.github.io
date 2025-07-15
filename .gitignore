@@ -15,3 +15,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Logs
+*.log
+
+# Python files
+*.py
