@@ -2,7 +2,7 @@
 
 baseURL: https://hasanoj.github.io/
 languageCode: en-us
-title: Hasan Algafri
+title: Hlog
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -16,8 +16,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Hlog
+  description: "Hi, I'm Hasan Algafri — a master's student in Artificial Intelligence with a wide interest in deep learning. My curiosity spans across areas like representation learning, generative models, and reinforcement learning. Recently, my research has focused on designing efficient and novel model architectures as well as exploring alternative training strategies. I also enjoy exploring broader topics I often encounter — including the theory of deep learning, model interpretability, and multimodal systems. This site is my personal lab notebook. Here, I share study notes, thoughts, unfinished experiments, and ideas I find worth revisiting — all part of learning in public."
   keywords: [Blog, Portfolio, PaperMod]
   author: Hasan Algafri
   math: true
