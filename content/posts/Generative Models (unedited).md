@@ -1,8 +1,16 @@
 ---
-title: Generative Models (unedited)
-date: 2025-05-11
+title: "Generative Models (unedited)"
+date: 2025-05-11T10:00:00Z
+lastmod: 2025-05-11T10:00:00Z
 draft: true
+author: "Hasan Algafri"
+description: "Comprehensive notes on deep generative models covering density estimation, sampling, and various model architectures including VAEs, GANs, and more."
 tags: [notes, unedited, generative models]
+categories: [blog]
+comments: true
+showToc: true
+TocOpen: false
+weight: 1
 ---
 
 [Stanford CS236: Deep Generative Models I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8)
