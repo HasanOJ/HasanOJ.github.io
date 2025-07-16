@@ -92,7 +92,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Welcome to Hlog: Hasan's Blog \U0001F4DD"
     Content: >
       Hi, this is Hasan Algafri. A master's student in AI with broad interests in deep learning, including but not limited to representation learning, generative models, and reinforcement learning. 
       Recently, my research has focused on developing efficient and innovative model architectures and training strategies. I also come across other topics that I enjoy thinking about, such as the theory of deep learning, interpretability, and multimodal learning. 
