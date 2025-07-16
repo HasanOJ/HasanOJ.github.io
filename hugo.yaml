@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=
-
 baseURL: https://hasanoj.github.io/
 languageCode: en-us
 title: Hlog
@@ -17,7 +15,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Hlog
-  description: "Hi, I'm Hasan Algafri. I'm a master's student in AI with broad interests in deep learning, including but not limited to representation learning, generative models, and reinforcement learning. Recently, my research has focused on developing efficient and innovative model architectures and training strategies. I also come across other topics that I enjoy thinking about, such as the theory of deep learning, interpretability, and multimodal learning. This blog serves as part digital lab notebook, part learning journal. Here, I share notes and ideas. Content ranges from deep dives and study notes to messy prototypes and unfinished side projects. all shared in the spirit of learning in public."
+  description: "Personal blog and digital lab notebook of Hasan Algafri"
   keywords: [Blog, Portfolio, PaperMod]
   author: Hasan Algafri
   math: true
@@ -95,7 +93,10 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: >
+      Hi, this is Hasan Algafri. A master's student in AI with broad interests in deep learning, including but not limited to representation learning, generative models, and reinforcement learning. 
+      Recently, my research has focused on developing efficient and innovative model architectures and training strategies. I also come across other topics that I enjoy thinking about, such as the theory of deep learning, interpretability, and multimodal learning. 
+      This blog serves as part digital lab notebook, part learning journal. Here, I share notes and ideas. Content ranges from deep dives and study notes to messy prototypes and unfinished side projects. all shared in the spirit of learning in public.
 
   socialIcons:
     - name: googlescholar
