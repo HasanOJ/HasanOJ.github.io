@@ -117,6 +117,8 @@ params:
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
+      # Google Analytics 4 tracking ID
+      GA4: "G-0SJM1KK8CL"
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
