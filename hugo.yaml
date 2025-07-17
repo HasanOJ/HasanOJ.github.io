@@ -2,6 +2,7 @@ baseURL: https://hasanoj.github.io/
 languageCode: en-us
 title: Hlog
 theme: PaperMod
+googleAnalytics: "G-0SJM1KK8CL"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -117,8 +118,6 @@ params:
   analytics:
     google:
       SiteVerificationTag: "XYZabc"
-      # Google Analytics 4 tracking ID
-      GA4: "G-0SJM1KK8CL"
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
