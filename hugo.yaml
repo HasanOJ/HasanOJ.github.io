@@ -175,6 +175,8 @@ pygmentsUseClasses: true
 
 markup:
   goldmark:
+    renderer:
+      unsafe: true  # Allows raw HTML/JS (needed for MathJax scripts)
     extensions:
       passthrough:
         enable: true

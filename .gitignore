@@ -2,6 +2,7 @@
 /public/
 /resources/
 /.hugo_build.lock
+public/
 
 # OS generated files
 .DS_Store
@@ -21,3 +22,5 @@ Thumbs.db
 
 # Python files
 *.py
+*.pyc
+__pycache__
