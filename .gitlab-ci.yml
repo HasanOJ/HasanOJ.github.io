@@ -1,0 +1,26 @@
+# GitLab CI/CD pipeline for Hugo deployment to GitLab Pages
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+variables:
+  HUGO_ENV: production
+  HUGO_ENABLEGITINFO: "true"
+
+test:
+  stage: test
+  script:
+    - hugo --gc --minify --baseURL="https://hasanoj.gitlab.io/hasanoj"
+  except:
+    - main
+
+pages:
+  stage: deploy
+  environment:
+    name: production
+    url: https://hasanoj.gitlab.io/hasanoj
+  script:
+    - hugo --gc --minify --baseURL="https://hasanoj.gitlab.io/hasanoj"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
