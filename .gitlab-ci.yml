@@ -16,7 +16,7 @@ pages:
   stage: deploy
   environment:
     name: production
-    url: https://hasanoj-177aba.gitlab.io
+    url: https://hasanoj.gitlab.io
   script:
     - hugo --gc --minify
   artifacts:
