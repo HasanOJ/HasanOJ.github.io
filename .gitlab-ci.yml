@@ -8,9 +8,9 @@ variables:
 test:
   stage: test
   script:
-    - hugo --gc --minify --baseURL="https://hasanoj.gitlab.io/hasanoj"
-  except:
-    - main
+    - hugo --gc --minify
+  rules:
+    - if: '$CI_COMMIT_BRANCH != "main"'
 
 pages:
   stage: deploy
@@ -18,9 +18,9 @@ pages:
     name: production
     url: https://hasanoj.gitlab.io/hasanoj
   script:
-    - hugo --gc --minify --baseURL="https://hasanoj.gitlab.io/hasanoj"
+    - hugo --gc --minify
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
