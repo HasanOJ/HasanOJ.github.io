@@ -1,0 +1,195 @@
+baseURL: https://hasanoj.gitlab.io/hasanoj/
+languageCode: en-us
+title: Hlog
+theme: PaperMod
+googleAnalytics: "G-0SJM1KK8CL"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Hlog
+  description: "Personal blog and digital lab notebook of Hasan Algafri"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Hasan Algafri
+  math: true
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  # Giscus Comments Configuration (disabled for GitLab migration)
+  # Note: Consider using GitLab Issues for comments or setting up alternative
+  giscus:
+    enable: false
+    repo: "HasanOJ/HasanOJ.github.io"
+    repoId: "R_kgDOOoKmKQ"
+    category: "General"
+    categoryId: "" # Will be filled after first discussion is created
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "en"
+    loading: "lazy"
+
+  # assets:
+  #   # disableHLJS: true # to disable highlight.js
+  #   # disableFingerprinting: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
+
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
+
+  # # profile-mode
+  # profileMode:
+  #   enabled: false # needs to be explicitly set
+  #   title: ExampleSite
+  #   subtitle: "This is subtitle"
+  #   imageUrl: "<img location>"
+  #   imageWidth: 120
+  #   imageHeight: 120
+  #   imageTitle: my image
+  #   buttons:
+  #     - name: Posts
+  #       url: posts
+  #     - name: Tags
+  #       url: tags
+
+  module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to Hlog: Hasan's Blog \U0001F4DD"
+    Content: >
+      This blog serves as part digital lab notebook, part learning journal. Here, I share notes and ideas. Content ranges from deep dives and study notes to messy prototypes and unfinished side projects. all shared in the spirit of learning in public.
+
+# Hi, this is Hasan Algafri. A master's student in AI with broad interests in deep learning, including but not limited to representation learning, generative models, and reinforcement learning. 
+
+
+# Recently, my research has focused on developing efficient and innovative model architectures and training strategies. 
+
+
+# I also come across other topics that I enjoy thinking about, such as the theory of deep learning, interpretability, and multimodal learning. 
+
+  socialIcons:
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=Fke4rMQAAAAJ&hl=en"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hasan-algafri-280534279/"
+    - name: github
+      url: "https://github.com/HasanOJ"
+    - name: email
+      url: "mailto:Hasan.O.Algafri@gmail.com"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 5
+    - identifier: categories
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: Archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+# markup:
+#   highlight:
+#     noClasses: false
+#     # anchorLineNos: true
+#     # codeFences: true
+#     # guessSyntax: true
+#     # lineNos: true
+#     # style: monokai
+#   goldmark:
+#     renderer:
+#       unsafe: true  # Allows raw HTML/JS (needed for MathJax scripts)
+#     highlight:
+#       codeFences: false  # Disable if conflicts with $$...$$
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allows raw HTML/JS (needed for MathJax scripts)
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["$", "$"]
+            - ["\\(", "\\)"]

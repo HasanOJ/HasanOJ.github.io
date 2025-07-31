@@ -1,0 +1,26 @@
+# Hugo build output (only ignore the build directory)
+/public/
+/resources/
+/.hugo_build.lock
+public/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Python files
+*.py
+*.pyc
+__pycache__
