@@ -31,3 +31,5 @@ This blog serves as a platform to share my thoughts, research insights, and expl
 ## Get in Touch
 
 I'm always interested in discussing research ideas, potential collaborations, or just connecting with fellow researchers and enthusiasts in the AI community. Feel free to reach out through the [contact information](https://hasanoj.github.io/).
+
+**[📄 Download PDF Version](https://drive.google.com/file/d/1Tcye0O9dpmQrjPzQGnHYmNFw2BOwGuB5/view?usp=sharing)** of my CV for a complete overview of my academic and professional background.
