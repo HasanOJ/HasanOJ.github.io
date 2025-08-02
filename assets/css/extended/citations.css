@@ -1,0 +1,38 @@
+/* Citation and Reference Styling */
+.citation {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.citation:hover {
+    text-decoration: underline;
+}
+
+.reference-entry {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    text-indent: -1em;
+    line-height: 1.4;
+}
+
+.reference-entry a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.reference-entry a:hover {
+    text-decoration: underline;
+}
+
+/* References section styling */
+h2#references {
+    border-top: 2px solid #eee;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+/* Smooth scroll for citation links */
+html {
+    scroll-behavior: smooth;
+}

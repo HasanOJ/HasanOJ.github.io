@@ -1,0 +1,52 @@
+{{- $bibFile := "references.bib" -}}
+{{- $citeKey := .Get 0 -}}
+{{- $bibContent := readFile $bibFile -}}
+
+{{- $pattern := printf "@[^{]+{%s," $citeKey -}}
+{{- $entry := "" -}}
+
+{{- range $line := split $bibContent "\n" -}}
+  {{- if findRE $pattern $line -}}
+    {{- $startFound := true -}}
+    {{- $braceCount := 0 -}}
+    {{- $entryLines := slice $line -}}
+    
+    {{- range $i, $char := split $line "" -}}
+      {{- if eq $char "{" -}}
+        {{- $braceCount = add $braceCount 1 -}}
+      {{- else if eq $char "}" -}}
+        {{- $braceCount = sub $braceCount 1 -}}
+      {{- end -}}
+    {{- end -}}
+    
+    {{- if eq $braceCount 0 -}}
+      {{- $entry = delimit $entryLines "\n" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $entry -}}
+  {{- $title := "" -}}
+  {{- $author := "" -}}
+  {{- $year := "" -}}
+  
+  {{- range $line := split $entry "\n" -}}
+    {{- if findRE "title\\s*=" $line -}}
+      {{- $title = replaceRE ".*title\\s*=\\s*[{\"](.*?)[}\"].*" "$1" $line -}}
+    {{- end -}}
+    {{- if findRE "author\\s*=" $line -}}
+      {{- $author = replaceRE ".*author\\s*=\\s*[{\"](.*?)[}\"].*" "$1" $line -}}
+    {{- end -}}
+    {{- if findRE "year\\s*=" $line -}}
+      {{- $year = replaceRE ".*year\\s*=\\s*[{\"](.*?)[}\"].*" "$1" $line -}}
+    {{- end -}}
+  {{- end -}}
+  
+  {{- if and $author $year -}}
+    <span class="citation">(<a href="#ref-{{ $citeKey }}">{{ replaceRE " and .*" " et al." (replaceRE ",.*" "" $author) }}, {{ $year }}</a>)</span>
+  {{- else -}}
+    <span class="citation">[{{ $citeKey }}]</span>
+  {{- end -}}
+{{- else -}}
+  <span class="citation">[{{ $citeKey }}]</span>
+{{- end -}}

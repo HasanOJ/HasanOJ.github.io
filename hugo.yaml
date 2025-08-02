@@ -187,7 +187,12 @@ markup:
   goldmark:
     renderer:
       unsafe: true  # Allows raw HTML/JS (needed for MathJax scripts)
+    parser:
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
     extensions:
+      footnote: true  # Enable footnote support
       passthrough:
         enable: true
         delimiters:
@@ -197,3 +202,7 @@ markup:
           inline:
             - ["$", "$"]
             - ["\\(", "\\)"]
+  bibliography:
+    style: apa
+    sources:
+      - references.bib
