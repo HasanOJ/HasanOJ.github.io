@@ -96,7 +96,7 @@ params:
   homeInfoParams:
     Title: "Welcome to Hlog: Hasan's Blog \U0001F4DD"
     Content: >
-      This blog serves as part digital lab notebook, part learning journal. Here, I share notes and ideas. Content ranges from deep dives and study notes to messy prototypes and unfinished side projects. all shared in the spirit of learning in public.
+      This blog serves as a platform for documenting my learning journey. Here, I share study notes and ideas I wonder about. Content ranges from deep dives to messy prototypes and unfinished side projects, all shared in the spirit of learning in public.
 
 # Hi, this is Hasan Algafri. A master's student in AI with broad interests in deep learning, including but not limited to representation learning, generative models, and reinforcement learning. 
 
@@ -159,6 +159,10 @@ menu:
       name: Archives
       url: /archives/
       weight: 20
+    # - identifier: cv
+    #   name: CV
+    #   url: /cv/
+    #   weight: 7
     - identifier: tags
       name: Tags
       url: /tags/
