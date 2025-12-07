@@ -25,6 +25,6 @@ Thumbs.db
 *.pyc
 __pycache__
 *.bib
-*README.md
+*/README.md
 *.ps1
 *.txt
