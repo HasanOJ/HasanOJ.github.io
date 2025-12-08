@@ -9,7 +9,7 @@
     data-reactions-enabled="{{ .Site.Params.giscus.reactionsEnabled | default "1" }}"
     data-emit-metadata="{{ .Site.Params.giscus.emitMetadata | default "0" }}"
     data-input-position="{{ .Site.Params.giscus.inputPosition | default "bottom" }}"
-    data-theme="transparent_dark"
+    data-theme="{{ .Site.Params.giscus.theme | default "preferred_color_scheme" }}"
     data-lang="{{ .Site.Params.giscus.lang | default "en" }}"
     data-loading="{{ .Site.Params.giscus.loading | default "lazy" }}"
     crossorigin="anonymous"

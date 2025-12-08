@@ -13,6 +13,13 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Hlog
@@ -24,13 +31,13 @@ params:
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -45,11 +52,11 @@ params:
   # Giscus Comments Configuration (disabled for GitLab migration)
   # Note: Consider using GitLab Issues for comments or setting up alternative
   giscus:
-    enable: false
+    enable: true
     repo: "HasanOJ/HasanOJ.github.io"
     repoId: "R_kgDOOoKmKQ"
     category: "General"
-    categoryId: "" # Will be filled after first discussion is created
+    categoryId: "DIC_kwDOOoKmKc4Cs_sK"
     mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
@@ -155,6 +162,10 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 15
     - identifier: Archives
       name: Archives
       url: /archives/

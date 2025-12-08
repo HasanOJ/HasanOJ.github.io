@@ -4,7 +4,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: false
 author: "Hasan Algafri"
-description: ""
+summary: ""
 tags: []
 categories: [blog]
 comments: true
