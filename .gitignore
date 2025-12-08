@@ -12,7 +12,6 @@ public/
 .Trashes
 ehthumbs.db
 Thumbs.db
-*.bib
 
 # Temporary files
 *.tmp
@@ -26,6 +25,6 @@ Thumbs.db
 *.pyc
 __pycache__
 *.bib
-*/README.md
+*README.md
 *.ps1
 *.txt
