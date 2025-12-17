@@ -17,6 +17,10 @@ Thumbs.db
 *.tmp
 *.temp
 
+# ENV files
+*.env
+venv/
+
 # Logs
 *.log
 
