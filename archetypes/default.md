@@ -1,21 +1,23 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: false
+title: "{{title}}"
+date: "{{date:YYYY-MM-DD}}"
+lastmod: "{{date:YYYY-MM-DD}}"
+draft: true
 author: "Hasan Algafri"
 summary: ""
 tags: []
-categories: [blog]
+categories:
+  - blog
 comments: true
-showToc: true
+ShowToc: true
 TocOpen: false
 math: true
+ShowPostHistory: false
 weight: 1
 cover:
-    image: ""
-    alt: ""
-    caption: ""
-    relative: false
-    hidden: false
+  image: ""
+  alt: ""
+  caption: ""
+  relative: false
+  hidden: false
 ---

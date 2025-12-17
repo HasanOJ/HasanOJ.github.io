@@ -9,6 +9,14 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+enableGitInfo: true
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -30,6 +38,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
+  ShowLastModified: true
   defaultTheme: auto # dark, light
   disableThemeToggle: true
 
@@ -136,10 +145,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  # editPost:
-  #   URL: "https://github.com/<path_to_repo>/content"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
+  editPost:
+    URL: "https://github.com/HasanOJ/HasanOJ.github.io/commits/main/content"
+    Text: "Post history"
+    appendFilePath: true
 
   # for search
   # https://fusejs.io/api/options.html
